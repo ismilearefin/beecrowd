@@ -900,3 +900,36 @@
 //         console.log(`${i}^2 = ${(i*i)}`);
 //     }
 // }
+
+
+// 1074
+var input = `4
+-5
+0
+3
+-4`;
+var lines = input.split('\n');
+const value = lines.map(X => parseInt(X));
+const testCase = value.shift();
+
+for(let i = 0; i < testCase; i++){
+    if(value[i] !== 0){
+        if(value[i] % 2 === 0){
+            if(value[i] > 0){
+                console.log('EVEN POSITIVE');
+            }else{
+                console.log("EVEN NEGATIVE");
+            }
+        }else{
+            if(value[i] > 0){
+                console.log('ODD POSITIVE');
+            }else{
+                console.log('ODD NEGATIVE');
+            }
+        }
+    }
+    if(value[i] === 0){
+        console.log("NULL");
+    }
+    
+}
