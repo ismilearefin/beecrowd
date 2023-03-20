@@ -945,10 +945,23 @@
 // }
 
 // 1078
-var input = `140`
-var lines = input.split('\n');
-const value = parseInt(lines[0]);
-for(let i = 1; i <= 10; i++){
-    console.log(`${i} x ${value} = ${i * value}`);
+// var input = `140`
+// var lines = input.split('\n');
+// const value = parseInt(lines[0]);
+// for(let i = 1; i <= 10; i++){
+//     console.log(`${i} x ${value} = ${i * value}`);
 
-}
+// }
+
+// 1079
+var input = `3
+6.5 4.3 6.2
+5.1 4.2 8.1
+8.0 9.0 10.0`
+var lines = input.split('\n');
+const testCase = lines.shift();
+let A = lines.map(x => {
+    let [X,Y,Z] = x.split(' ')
+    const result =  ((X * 2) + (Y * 3) + (Z * 5)) / 10; 
+    console.log(result.toFixed(1));
+})
