@@ -954,14 +954,25 @@
 // }
 
 // 1079
-var input = `3
-6.5 4.3 6.2
-5.1 4.2 8.1
-8.0 9.0 10.0`
-var lines = input.split('\n');
-const testCase = lines.shift();
-let A = lines.map(x => {
-    let [X,Y,Z] = x.split(' ')
-    const result =  ((X * 2) + (Y * 3) + (Z * 5)) / 10; 
-    console.log(result.toFixed(1));
-})
+// var input = `3
+// 9.1 7.5 4.3
+// 8.3 5.5 6.1
+// 9.1 7.8 5.6`
+// var lines = input.split('\n');
+// const testCase = lines.shift();
+
+// for(let i = 0; i < testCase; i++) {
+//     let [X,Y,Z] = lines[i].split(' ');
+//     const result =  ((X * 2) + (Y * 3) + (Z * 5)) / 10; 
+//     console.log(parseFloat(result).toFixed(1));
+// }
+
+
+// 1079 worng answers
+// let A = lines.map(x => {
+//     let [X,Y,Z] = x.split(' ')
+//     const result =  ((X * 2) + (Y * 3) + (Z * 5)) / 10; 
+//     console.log(parseFloat(result).toFixed(1));
+// })
+// let f = 7.24
+// console.log(f.toFixed(1));
