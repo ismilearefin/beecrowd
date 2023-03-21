@@ -1040,3 +1040,32 @@
 // Percentual de coelhos: ${(Total_coelhos/total_ani *100).toFixed(2)} %
 // Percentual de ratos: ${(Total_ratos/total_ani *100).toFixed(2)} %
 // Percentual de sapos: ${(Total_sapos/total_ani *100).toFixed(2)} %`);
+
+
+// 1095
+
+let I = [1];
+let J = [];
+
+for (let i = 60; i >= 0 ; i-=5){
+    J.push(i);
+}
+let Y = 1;
+for(let x= 1; x <= J.length; x++){
+    Y = Y + 3;
+    I.push(Y);
+}
+console.log(`I=${I[0]} J=${J[0]}
+I=${I[1]} J=${J[1]}
+I=${I[2]} J=${J[2]}
+I=${I[3]} J=${J[3]}
+I=${I[4]} J=${J[4]}
+I=${I[5]} J=${J[5]}
+I=${I[6]} J=${J[6]}
+I=${I[7]} J=${J[7]}
+I=${I[8]} J=${J[8]}
+I=${I[9]} J=${J[9]}
+I=${I[10]} J=${J[10]}
+I=${I[11]} J=${J[11]}
+I=${I[12]} J=${J[12]}`);
+
