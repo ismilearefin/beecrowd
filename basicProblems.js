@@ -976,3 +976,67 @@
 // })
 // let f = 7.24
 // console.log(f.toFixed(1));
+
+
+// 1080
+// var input = `86371
+// 47686
+// 96720
+// 31060
+// 1979
+// 39970
+// 31643
+// 15529
+// 50837
+// 10742
+// 14155
+// `
+// var lines = input.split('\n');
+// const value = lines.map(X => parseInt(X));
+// const max = lines.reduce((a, b) => Math.max(a, b), -Infinity);
+// const indexOf_MaxValue = value.indexOf(max);
+// console.log(max);
+// console.log(indexOf_MaxValue + 1);
+
+// 1094
+// var input = `10
+// 10 C
+// 6 R
+// 15 S
+// 5 C
+// 14 R
+// 9 C
+// 6 R
+// 8 S
+// 5 C
+// 14 R`
+// var lines = input.split('\n');
+// const testCase = lines.shift();
+
+// let NewArr = [];
+
+// const splitArr = lines.forEach(X => {
+    
+//     NewArr.push(X.split(' '))
+// })
+
+// let total_ani = 0;
+// for(let i = 0; i < testCase; i++){
+//     total_ani =  total_ani + parseInt(NewArr[i][0]);
+// }
+// const C = NewArr.filter(X => X[1] === 'C');
+// const S = NewArr.filter(X => X[1] === 'S');
+// const R = NewArr.filter(X => X[1] === 'R');
+// const C_result = C.map(s => parseInt(s[0])) 
+// const Total_coelhos = C_result.reduce((acc,i) => acc + i,0); //29
+// const R_result = R.map(s => parseInt(s[0])) 
+// const Total_ratos = R_result.reduce((acc,i) => acc + i,0); //29
+// const S_result = S.map(s => parseInt(s[0])) 
+// const Total_sapos = S_result.reduce((acc,i) => acc + i,0); //29
+// console.log(`Total: ${total_ani} cobaias
+// Total de coelhos: ${Total_coelhos}
+// Total de ratos: ${Total_ratos}
+// Total de sapos: ${Total_sapos}
+// Percentual de coelhos: ${(Total_coelhos/total_ani *100).toFixed(2)} %
+// Percentual de ratos: ${(Total_ratos/total_ani *100).toFixed(2)} %
+// Percentual de sapos: ${(Total_sapos/total_ani *100).toFixed(2)} %`);
