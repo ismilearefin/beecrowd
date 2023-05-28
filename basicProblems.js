@@ -1103,42 +1103,73 @@
 
 // 1099
 
-let input = `7
+// let input = `7
 
-4 5
+// 4 5
 
-13 10
+// 13 10
 
-6 4
+// 6 4
 
-3 3
+// 3 3
 
-3 5
+// 3 5
 
-3 4
+// 3 4
 
-3 8`
-let lines = input.split('\n');
-let testCase = lines.map(line => line.split(' '));
+// 3 8`
+// let lines = input.split('\n');
+// let testCase = lines.map(line => line.split(' '));
 
 
-for (let i = 0; i < testCase.length; i++) {
-    let element = testCase[i];
-    if(element.length === 2){
-      let numberOfArray = element.map(num => parseInt(num));
-      let start = Math.min(...numberOfArray);
-      let end = Math.max(...numberOfArray);
+// for (let i = 0; i < testCase.length; i++) {
+//     let element = testCase[i];
+//     if(element.length === 2){
+//       let numberOfArray = element.map(num => parseInt(num));
+//       let start = Math.min(...numberOfArray);
+//       let end = Math.max(...numberOfArray);
       
-      let sum = 0;
-      for (let i = start + 1; i < end; i++) {
-        if (i % 2 !== 0) {
-          sum += i;
-        }
-      }
+//       let sum = 0;
+//       for (let i = start + 1; i < end; i++) {
+//         if (i % 2 !== 0) {
+//           sum += i;
+//         }
+//       }
       
-      console.log(sum);
+//       console.log(sum);
       
     
+//     }
+// };
+
+
+// 1101
+
+let input =`1 1
+5`;
+let lines = input.split('\n');
+
+const output = lines.map(line => line.split(' '));
+
+for (let i = 0; i < output.length; i++) {
+    const numOfArray = output[i].map(num => parseInt(num))
+    
+    if( numOfArray[0] <= 0 || numOfArray[1] <= 0){
+        break;
+    }else{
+        let start = Math.max(...numOfArray);
+      let end = Math.min(...numOfArray);
+      
+      let sum = [];
+      for (let i = end; i <= start; i++) {
+        sum.push(i)
     }
-};
+    
+    const result = sum.reduce((acc, sum) => acc + sum,0);
+    
+      
+    console.log(`${sum.join(' ')} Sum=${result}`);
+        
+    }
+}
 
