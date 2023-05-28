@@ -1044,28 +1044,60 @@
 
 // 1095
 
-let I = [1];
-let J = [];
+// let I = [1];
+// let J = [];
 
-for (let i = 60; i >= 0 ; i-=5){
-    J.push(i);
-}
-let Y = 1;
-for(let x= 1; x <= J.length; x++){
-    Y = Y + 3;
-    I.push(Y);
-}
-console.log(`I=${I[0]} J=${J[0]}
-I=${I[1]} J=${J[1]}
-I=${I[2]} J=${J[2]}
-I=${I[3]} J=${J[3]}
-I=${I[4]} J=${J[4]}
-I=${I[5]} J=${J[5]}
-I=${I[6]} J=${J[6]}
-I=${I[7]} J=${J[7]}
-I=${I[8]} J=${J[8]}
-I=${I[9]} J=${J[9]}
-I=${I[10]} J=${J[10]}
-I=${I[11]} J=${J[11]}
-I=${I[12]} J=${J[12]}`);
+// for (let i = 60; i >= 0 ; i-=5){
+//     J.push(i);
+// }
+// let Y = 1;
+// for(let x= 1; x <= J.length; x++){
+//     Y = Y + 3;
+//     I.push(Y);
+// }
+// console.log(`I=${I[0]} J=${J[0]}
+// I=${I[1]} J=${J[1]}
+// I=${I[2]} J=${J[2]}
+// I=${I[3]} J=${J[3]}
+// I=${I[4]} J=${J[4]}
+// I=${I[5]} J=${J[5]}
+// I=${I[6]} J=${J[6]}
+// I=${I[7]} J=${J[7]}
+// I=${I[8]} J=${J[8]}
+// I=${I[9]} J=${J[9]}
+// I=${I[10]} J=${J[10]}
+// I=${I[11]} J=${J[11]}
+// I=${I[12]} J=${J[12]}`);
+
+// 1096
+
+// let i ;
+// let j ;
+
+// for(let i = 1; i <=9; i=i+2){
+//     for(let j =7; j>=5;j--){
+//         console.log(`I=${i} J=${j}`)
+//     }
+// }
+
+// 1097
+// let i ;
+// let j ;
+
+// for(let i = 1; i <= 9; i=i+2){
+//     for(let j =6+i; j>3+i; j--){
+//         console.log(`I=${i} J=${j}`);
+// }}
+
+
+// 1098
+// let i ;
+// let j ;
+
+// for(let i = 0; i <= 2; i=i+0.2){
+    
+//     for(let j =1+i; j<=3+i; j++){
+//         console.log(`I=${parseFloat(i.toFixed(1))} J=${parseFloat(j.toFixed(1))}`);
+//     }
+// }
 
