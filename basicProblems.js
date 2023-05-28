@@ -1101,3 +1101,44 @@
 //     }
 // }
 
+// 1099
+
+let input = `7
+
+4 5
+
+13 10
+
+6 4
+
+3 3
+
+3 5
+
+3 4
+
+3 8`
+let lines = input.split('\n');
+let testCase = lines.map(line => line.split(' '));
+
+
+for (let i = 0; i < testCase.length; i++) {
+    let element = testCase[i];
+    if(element.length === 2){
+      let numberOfArray = element.map(num => parseInt(num));
+      let start = Math.min(...numberOfArray);
+      let end = Math.max(...numberOfArray);
+      
+      let sum = 0;
+      for (let i = start + 1; i < end; i++) {
+        if (i % 2 !== 0) {
+          sum += i;
+        }
+      }
+      
+      console.log(sum);
+      
+    
+    }
+};
+
