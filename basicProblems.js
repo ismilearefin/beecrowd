@@ -1176,16 +1176,38 @@
 
 // 1113
 
-let input =`5 4
-7 2
-3 8
-2 2`
+// let input =`5 4
+// 7 2
+// 3 8
+// 2 2`
+// let lines = input.split('\n');
+// lines.forEach(line => {
+//     let [x,y] = line.split(' ');
+//     if(parseInt(x) > parseInt(y)){
+//         console.log('Decrescente');
+//     }else if(parseInt(x) < parseInt(y)){
+//         console.log('Crescente');
+//     }
+// });
+
+// 1114
+
+let input =`0
+000
+1010
+1231
+999999999
+1323
+2020
+2002
+2133`
 let lines = input.split('\n');
-lines.forEach(line => {
-    let [x,y] = line.split(' ');
-    if(parseInt(x) > parseInt(y)){
-        console.log('Decrescente');
-    }else if(parseInt(x) < parseInt(y)){
-        console.log('Crescente');
+const arrlength = lines.indexOf('2002')
+
+for(let i = 0; i <= arrlength; i++) {
+    if(lines[i] === '2002'){
+        console.log('Acesso Permitido')
+    }else{
+        console.log('Senha Invalida');
     }
-});
+}
