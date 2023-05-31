@@ -1145,31 +1145,47 @@
 
 // 1101
 
-let input =`1 1
-5`;
-let lines = input.split('\n');
+// let input =`1 1
+// 5`;
+// let lines = input.split('\n');
 
-const output = lines.map(line => line.split(' '));
+// const output = lines.map(line => line.split(' '));
 
-for (let i = 0; i < output.length; i++) {
-    const numOfArray = output[i].map(num => parseInt(num))
+// for (let i = 0; i < output.length; i++) {
+//     const numOfArray = output[i].map(num => parseInt(num))
     
-    if( numOfArray[0] <= 0 || numOfArray[1] <= 0){
-        break;
-    }else{
-        let start = Math.max(...numOfArray);
-      let end = Math.min(...numOfArray);
+//     if( numOfArray[0] <= 0 || numOfArray[1] <= 0){
+//         break;
+//     }else{
+//         let start = Math.max(...numOfArray);
+//       let end = Math.min(...numOfArray);
       
-      let sum = [];
-      for (let i = end; i <= start; i++) {
-        sum.push(i)
-    }
+//       let sum = [];
+//       for (let i = end; i <= start; i++) {
+//         sum.push(i)
+//     }
     
-    const result = sum.reduce((acc, sum) => acc + sum,0);
+//     const result = sum.reduce((acc, sum) => acc + sum,0);
     
       
-    console.log(`${sum.join(' ')} Sum=${result}`);
+//     console.log(`${sum.join(' ')} Sum=${result}`);
         
-    }
-}
+//     }
+// }
 
+
+// 1113
+
+let input =`5 4
+7 2
+3 8
+2 2`
+let lines = input.split('\n');
+lines.forEach(line => {
+    let [x,y] = line.split(' ');
+    if(parseInt(x) > parseInt(y)){
+        console.log('Decrescente');
+    }else if(parseInt(x) < parseInt(y)){
+        console.log('Crescente');
+    }
+});
