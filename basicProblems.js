@@ -1192,22 +1192,45 @@
 
 // 1114
 
-let input =`0
-000
-1010
-1231
-999999999
-1323
-2020
-2002
-2133`
-let lines = input.split('\n');
-const arrlength = lines.indexOf('2002')
+// let input =`0
+// 000
+// 1010
+// 1231
+// 999999999
+// 1323
+// 2020
+// 2002
+// 2133`
+// let lines = input.split('\n');
+// const arrlength = lines.indexOf('2002')
 
-for(let i = 0; i <= arrlength; i++) {
-    if(lines[i] === '2002'){
-        console.log('Acesso Permitido')
-    }else{
-        console.log('Senha Invalida');
-    }
-}
+// for(let i = 0; i <= arrlength; i++) {
+//     if(lines[i] === '2002'){
+//         console.log('Acesso Permitido')
+//     }else{
+//         console.log('Senha Invalida');
+//     }
+// }
+
+// 1115
+
+let input = `2 2
+3 -2
+-7 1
+-8 -1
+0 2`
+let lines = input.split('\n');
+console.log(lines);
+lines.forEach(line => {
+        let [x,y] = line.split(' ');
+        
+        if(x > 0 && y > 0 && (x !== "0" || y !== "0")){
+            console.log('primeiro');
+        }else if(x > 0 && y < 0 && (x !== "0" || y !== "0")){
+            console.log('quarto');
+        }else if(x < 0 && y < 0 && (x !== "0" || y !== "0")){
+            console.log('terceiro');
+        }else if(x < 0 && y > 0 && (x !== "0" || y !== '0')){
+            console.log('segundo');
+        }
+    });
