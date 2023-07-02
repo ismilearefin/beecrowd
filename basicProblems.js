@@ -1237,11 +1237,11 @@
 
 
 // 1116
-let input = `3
-3 -2
--8 0
-0 8`
-let lines = input.split('\n');
+// let input = `3
+// 3 -2
+// -8 0
+// 0 8`
+// let lines = input.split('\n');
 // lines.shift();
 // // console.log(lines)
 // lines.forEach(line => {
@@ -1258,19 +1258,43 @@ let lines = input.split('\n');
         
 //     });
 //------------------------------------------->>>>
-var sep = [' ', '\n'];
+// var sep = [' ', '\n'];
 
-var line = input.split(new RegExp(sep.join('|'), 'g'));
+// var line = input.split(new RegExp(sep.join('|'), 'g'));
 
-var n = parseInt(line.shift());
+// var n = parseInt(line.shift());
 
-for (var i = 0; i < n; i ++){
-    var x = parseInt(line.shift());
-    var y = parseInt(line.shift());
-    if (y === 0){
-        console.log("divisao impossivel");
-    }
-    else{
-        console.log((x / y).toFixed(1));
-    }
-}
+// for (var i = 0; i < n; i ++){
+//     var x = parseInt(line.shift());
+//     var y = parseInt(line.shift());
+//     if (y === 0){
+//         console.log("divisao impossivel");
+//     }
+//     else{
+//         console.log((x / y).toFixed(1));
+//     }
+// }
+
+
+// 1117
+// let input = `-3.5
+// 5.5
+// 11
+// -23
+// -4
+// 10
+// 9
+// 0`
+// let lines = input.split('\n');
+
+// const validNumber = [];
+// const line = lines.forEach(x => {
+//   if(x >= 0.0 && x <= 10.0){
+//     validNumber.push(Number(x));
+//   }else{
+//     console.log(`nota invalida`);
+//   }
+// });
+// const [x, y] = validNumber;
+// console.log(`media = ${((x+y)/2).toFixed(2)}`);
+
