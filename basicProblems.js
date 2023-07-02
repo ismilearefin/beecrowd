@@ -1214,23 +1214,63 @@
 
 // 1115
 
-let input = `2 2
-3 -2
--7 1
--8 -1
-0 2`
-let lines = input.split('\n');
-console.log(lines);
-lines.forEach(line => {
-        let [x,y] = line.split(' ');
+// let input = `2 2
+// 3 -2
+// -7 1
+// -8 -1
+// 0 2`
+// let lines = input.split('\n');
+// console.log(lines);
+// lines.forEach(line => {
+//         let [x,y] = line.split(' ');
         
-        if(x > 0 && y > 0 && (x !== "0" || y !== "0")){
-            console.log('primeiro');
-        }else if(x > 0 && y < 0 && (x !== "0" || y !== "0")){
-            console.log('quarto');
-        }else if(x < 0 && y < 0 && (x !== "0" || y !== "0")){
-            console.log('terceiro');
-        }else if(x < 0 && y > 0 && (x !== "0" || y !== '0')){
-            console.log('segundo');
-        }
-    });
+//         if(x > 0 && y > 0 && (x !== "0" || y !== "0")){
+//             console.log('primeiro');
+//         }else if(x > 0 && y < 0 && (x !== "0" || y !== "0")){
+//             console.log('quarto');
+//         }else if(x < 0 && y < 0 && (x !== "0" || y !== "0")){
+//             console.log('terceiro');
+//         }else if(x < 0 && y > 0 && (x !== "0" || y !== '0')){
+//             console.log('segundo');
+//         }
+//     });
+
+
+// 1116
+let input = `3
+3 -2
+-8 0
+0 8`
+let lines = input.split('\n');
+// lines.shift();
+// // console.log(lines)
+// lines.forEach(line => {
+//   // console.log(line)
+//         let [x,y] = line.split(' ');
+//          x = parseFloat(x);
+//          y = parseFloat(y);
+//         //  console.log(x,y)
+//         if( y === 0){
+//           console.log('divisao impossivel');
+//         }else{
+//           console.log(parseFloat(x/y).toFixed(1));
+//         }
+        
+//     });
+//------------------------------------------->>>>
+var sep = [' ', '\n'];
+
+var line = input.split(new RegExp(sep.join('|'), 'g'));
+
+var n = parseInt(line.shift());
+
+for (var i = 0; i < n; i ++){
+    var x = parseInt(line.shift());
+    var y = parseInt(line.shift());
+    if (y === 0){
+        console.log("divisao impossivel");
+    }
+    else{
+        console.log((x / y).toFixed(1));
+    }
+}
