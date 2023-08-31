@@ -1,4 +1,3 @@
-
 // const A = parseInt(lines[0]);
 // const B = parseInt(lines[1]);
 
@@ -70,8 +69,6 @@
 // QUADRADO: ${QUADRADO.toFixed(3)}
 // RETANGULO: ${RETANGULO.toFixed(3)}`);
 
-
-
 // 1013 wrong answers
 // var input = '217 14 6';
 // var lines = input.split('/n');
@@ -88,7 +85,7 @@
 // const data = lines[0].split(' ');
 // const arr = data.map(X => parseInt(X));
 // let largest = arr[0];
- 
+
 // for(let i=0; i < arr.length; i++){
 //     if(largest < arr[i]){
 //         largest = arr[i]
@@ -109,7 +106,7 @@
 // 5.0 9.0`;
 // const lines = input.split('\n');
 // const [p1,p2] = lines.map(X => X);
-// const [x1, y1] = p1.split(' '); 
+// const [x1, y1] = p1.split(' ');
 // const [x2, y2] = p2.split(' ');
 // const value = Math.pow(parseFloat(x2) - parseFloat(x1),2) + Math.pow(parseFloat(y2) - parseFloat(y1),2);
 // const result = Math.sqrt(value);
@@ -164,7 +161,6 @@
 // secValue = secValue % 60;
 // console.log(`${H}:${min}:${secValue}`)
 
-
 // 1020
 // const input = '30';
 // const lines = input.split('\n');
@@ -180,7 +176,6 @@
 // ${month} mes(es)
 // ${days} dia(s)`)
 
-
 // 1021
 // const input = '576.73';
 // const lines = input.split('\n');
@@ -195,7 +190,7 @@
 //     let A = Math.floor(value / arr[i]);
 //     let B =  value - (A* arr[i]) ;
 //     note.push(A);
-//     value = B;   
+//     value = B;
 // }
 // let newValue = parseFloat(value.toFixed(2))*100
 //     for(let j = 0; j < coins.length; j++){
@@ -225,9 +220,9 @@
 // const [A,B,C,D] = (lines[0].split(' '))
 
 // if ( (parseInt(B) > parseInt(C) && parseInt(D) > parseInt(A)) && (parseInt(C)+parseInt(D) > parseInt(A)+parseInt(B)) && (parseInt(C) > 0 && parseInt(D) > 0) && (parseInt(A) % 2 === 0)) {
-    
+
 //     console.log("Valores aceitos");
-    
+
 // }else{
 //     console.log("Valores nao aceitos");
 // }
@@ -238,8 +233,6 @@
 // const [A,B,C] = (lines[0].split(' '));
 
 // let delta = parseFloat(B) * parseFloat(B) - 4 * parseFloat(A) * parseFloat(C);
-
-
 
 // if (delta <= 0 || parseFloat(A) === 0 ) {
 //   console.log("Impossivel calcular");
@@ -254,7 +247,6 @@
 // const input = '65.02';
 // const lines = input.split('\n');
 // const value = parseFloat(lines[0].split(' '));
-
 
 // if(value < 0 || value > 100){
 //     console.log('Fora de intervalo')
@@ -308,7 +300,6 @@
 // const exactValue = (Y * found.Price).toFixed(2);
 // console.log(`Total: R$ ${exactValue}`);
 
-
 // 1040
 // const input = `2.0 6.5 4.0 9.0
 // 6.4`;
@@ -329,7 +320,7 @@
 //   };
 
 // if(lines[1]){
-//     const FinalResult = (parseFloat(lines[1]) + result)/2; 
+//     const FinalResult = (parseFloat(lines[1]) + result)/2;
 //     if(FinalResult <= 4.9){
 //         console.log(`Nota do exame: ${parseFloat(lines[1]).toFixed(1)}
 // Aluno reprovado.
@@ -340,7 +331,6 @@
 // Media final: ${FinalResult.toFixed(1)}`)
 //     }
 // };
-
 
 // 1041
 // const input = `0.0 0.0`
@@ -382,7 +372,7 @@
 //     if(a > b) return 1;
 //     if(a < b) return -1;
 //     return 0;
-    
+
 // });
 // const [x,y,z] = result;
 // const [a,b,c] = value;
@@ -427,7 +417,7 @@
 //     if(a > b) return -1;
 //     if(a < b) return 1;
 //     return 0;
-    
+
 // });
 // const [A,B,C] = result;
 // if(A === B && B === C && C === A){
@@ -506,9 +496,9 @@
 //         let min = 60 - (C - D);
 //         console.log(`O JOGO DUROU ${TotalHours} HORA(S) E ${min} MINUTO(S)`);
 //     }
-    
+
 // }else if(A > 12 && B >= 12){
-    
+
 //     let result = Math.abs(A - B);
 //     if (C === D){
 //         let min = 0;
@@ -522,7 +512,7 @@
 //     }
 
 // }else if(A > 12 && B < A){
-    
+
 //     let result = (TotalHours - A + B);
 //     if (C === D){
 //         let min = 0;
@@ -537,7 +527,7 @@
 
 // }
 // else if(A <= 12){
-    
+
 //     let result = Math.abs(B - A);
 //     if (C === D){
 //         let min = 0;
@@ -550,7 +540,6 @@
 //         console.log(`O JOGO DUROU ${result === 1 ? 0 : result} HORA(S) E ${min} MINUTO(S)`);
 //     }
 // }
-
 
 // var input = `7 10 8 9`;
 // var lines = input.split('\n');
@@ -565,7 +554,6 @@
 // let time = result/60;
 // let min = result%60;
 // console.log(`O JOGO DUROU ${parseInt(time)} HORA(S) E ${parseInt(min)} MINUTO(S)`);
-
 
 // 1048
 // var input = `400.00`;
@@ -706,7 +694,7 @@
 // const value = lines.map(X => parseInt(X));
 // let result = [];
 // for(let i = 0; i <= value.length; i++) {
-    
+
 //     if(value[i] > 0){
 //         result.push(value[i]);
 //     }
@@ -714,14 +702,13 @@
 // }
 // console.log(`${result.length} valores positivos`);
 
-
 // 1061
 // var input = `Dia 5
 // 08 : 12 : 23
 // Dia 9
 // 06 : 13 : 23`;
 // var lines = input.split('\n');
-// const [Dia1, day1] = lines[0].split(' '); // '5' 
+// const [Dia1, day1] = lines[0].split(' '); // '5'
 // const [Dia2, day2] = lines[2].split(' ');// '9'
 // const [h1,m1,s1] = lines[1].split(':'); //08 12 23
 // const [h2,m2,s2] = lines[3].split(':');//06 13 23
@@ -760,7 +747,7 @@
 // const value = lines.map(X => parseFloat(X));
 // let result = [];
 // for(let i = 0; i <= value.length; i++) {
-    
+
 //     if(value[i] > 0){
 //         result.push(value[i]);
 //     }
@@ -773,7 +760,6 @@
 // console.log(`${result.length} valores positivos
 // ${Avg.toFixed(1)}`);
 
-
 // 1065
 // var input = `7
 // -5
@@ -784,14 +770,13 @@
 // const value = lines.map(X => parseFloat(X));
 // let result = [];
 // for(let i = 0; i <= value.length; i++) {
-    
+
 //     if(value[i] % 2 === 0){
 //         result.push(value[i]);
 //     }
 
 // }
 // console.log(`${result.length} valores pares`);
-
 
 // 1066
 // var input = `-5
@@ -810,7 +795,7 @@
 //     if(value[i] % 2 === 0){
 //         even+=1;
 //     }else{
-        
+
 //         odd+=1;
 //     }
 //     //positive numbers
@@ -828,7 +813,6 @@
 // ${positive} valor(es) positivo(s)
 // ${negative} valor(es) negativo(s)`);
 
-
 // 1067
 // var input = `8`
 // var lines = input.split('\n');
@@ -839,9 +823,8 @@
 //           console.log(i);
 //         }
 //     };
-    
-// }
 
+// }
 
 // 1070
 // var input = `8`
@@ -866,7 +849,6 @@
 //     }
 // }
 // console.log(sum);
-
 
 // 1072
 // var input = `4
@@ -901,7 +883,6 @@
 //     }
 // }
 
-
 // 1074
 // var input = `4
 // -5
@@ -931,7 +912,7 @@
 //     if(value[i] === 0){
 //         console.log("NULL");
 //     }
-    
+
 // }
 
 // 1075
@@ -963,20 +944,18 @@
 
 // for(let i = 0; i < testCase; i++) {
 //     let [X,Y,Z] = lines[i].split(' ');
-//     const result =  ((X * 2) + (Y * 3) + (Z * 5)) / 10; 
+//     const result =  ((X * 2) + (Y * 3) + (Z * 5)) / 10;
 //     console.log(parseFloat(result).toFixed(1));
 // }
-
 
 // 1079 worng answers
 // let A = lines.map(x => {
 //     let [X,Y,Z] = x.split(' ')
-//     const result =  ((X * 2) + (Y * 3) + (Z * 5)) / 10; 
+//     const result =  ((X * 2) + (Y * 3) + (Z * 5)) / 10;
 //     console.log(parseFloat(result).toFixed(1));
 // })
 // let f = 7.24
 // console.log(f.toFixed(1));
-
 
 // 1080
 // var input = `86371
@@ -1016,7 +995,7 @@
 // let NewArr = [];
 
 // const splitArr = lines.forEach(X => {
-    
+
 //     NewArr.push(X.split(' '))
 // })
 
@@ -1027,11 +1006,11 @@
 // const C = NewArr.filter(X => X[1] === 'C');
 // const S = NewArr.filter(X => X[1] === 'S');
 // const R = NewArr.filter(X => X[1] === 'R');
-// const C_result = C.map(s => parseInt(s[0])) 
+// const C_result = C.map(s => parseInt(s[0]))
 // const Total_coelhos = C_result.reduce((acc,i) => acc + i,0); //29
-// const R_result = R.map(s => parseInt(s[0])) 
+// const R_result = R.map(s => parseInt(s[0]))
 // const Total_ratos = R_result.reduce((acc,i) => acc + i,0); //29
-// const S_result = S.map(s => parseInt(s[0])) 
+// const S_result = S.map(s => parseInt(s[0]))
 // const Total_sapos = S_result.reduce((acc,i) => acc + i,0); //29
 // console.log(`Total: ${total_ani} cobaias
 // Total de coelhos: ${Total_coelhos}
@@ -1040,7 +1019,6 @@
 // Percentual de coelhos: ${(Total_coelhos/total_ani *100).toFixed(2)} %
 // Percentual de ratos: ${(Total_ratos/total_ani *100).toFixed(2)} %
 // Percentual de sapos: ${(Total_sapos/total_ani *100).toFixed(2)} %`);
-
 
 // 1095
 
@@ -1089,13 +1067,12 @@
 //         console.log(`I=${i} J=${j}`);
 // }}
 
-
 // 1098
 // let i ;
 // let j ;
 
 // for(let i = 0; i <= 2; i=i+0.2){
-    
+
 //     for(let j =1+i; j<=3+i; j++){
 //         console.log(`I=${parseFloat(i.toFixed(1))} J=${parseFloat(j.toFixed(1))}`);
 //     }
@@ -1121,27 +1098,24 @@
 // let lines = input.split('\n');
 // let testCase = lines.map(line => line.split(' '));
 
-
 // for (let i = 0; i < testCase.length; i++) {
 //     let element = testCase[i];
 //     if(element.length === 2){
 //       let numberOfArray = element.map(num => parseInt(num));
 //       let start = Math.min(...numberOfArray);
 //       let end = Math.max(...numberOfArray);
-      
+
 //       let sum = 0;
 //       for (let i = start + 1; i < end; i++) {
 //         if (i % 2 !== 0) {
 //           sum += i;
 //         }
 //       }
-      
+
 //       console.log(sum);
-      
-    
+
 //     }
 // };
-
 
 // 1101
 
@@ -1153,26 +1127,24 @@
 
 // for (let i = 0; i < output.length; i++) {
 //     const numOfArray = output[i].map(num => parseInt(num))
-    
+
 //     if( numOfArray[0] <= 0 || numOfArray[1] <= 0){
 //         break;
 //     }else{
 //         let start = Math.max(...numOfArray);
 //       let end = Math.min(...numOfArray);
-      
+
 //       let sum = [];
 //       for (let i = end; i <= start; i++) {
 //         sum.push(i)
 //     }
-    
+
 //     const result = sum.reduce((acc, sum) => acc + sum,0);
-    
-      
+
 //     console.log(`${sum.join(' ')} Sum=${result}`);
-        
+
 //     }
 // }
-
 
 // 1113
 
@@ -1223,7 +1195,7 @@
 // console.log(lines);
 // lines.forEach(line => {
 //         let [x,y] = line.split(' ');
-        
+
 //         if(x > 0 && y > 0 && (x !== "0" || y !== "0")){
 //             console.log('primeiro');
 //         }else if(x > 0 && y < 0 && (x !== "0" || y !== "0")){
@@ -1234,7 +1206,6 @@
 //             console.log('segundo');
 //         }
 //     });
-
 
 // 1116
 // let input = `3
@@ -1255,7 +1226,7 @@
 //         }else{
 //           console.log(parseFloat(x/y).toFixed(1));
 //         }
-        
+
 //     });
 //------------------------------------------->>>>
 // var sep = [' ', '\n'];
@@ -1274,7 +1245,6 @@
 //         console.log((x / y).toFixed(1));
 //     }
 // }
-
 
 // 1117
 // let input = `-3.5
@@ -1429,37 +1399,63 @@
 
 //   if(i%5 === 2 || i%5 === 3){
 //     console.log(i);
-    
-//   };
-  
-// };
 
+//   };
+
+// };
 
 // 1134
 
-var input = `8
-1
-7
-2
-2
-4`
-var lines = input.split('\n');
-const convertIntoInt = lines.map(num => parseInt(num));
+// var input = `8
+// 1
+// 7
+// 2
+// 2
+// 4`
+// var lines = input.split('\n');
+// const convertIntoInt = lines.map(num => parseInt(num));
 
-let Alcool= 0;
-let Gasolina= 0;
-let Diesel= 0;
-for(let i = 0; i < convertIntoInt.length; i++){
-  
-  if(convertIntoInt[i] === 1){
-    Alcool++;
-  }else if(convertIntoInt[i] === 2){
-    Gasolina++;
-  }else if(convertIntoInt[i] === 3){
-    Diesel++;
+// let Alcool= 0;
+// let Gasolina= 0;
+// let Diesel= 0;
+// for(let i = 0; i < convertIntoInt.length; i++){
+
+//   if(convertIntoInt[i] === 1){
+//     Alcool++;
+//   }else if(convertIntoInt[i] === 2){
+//     Gasolina++;
+//   }else if(convertIntoInt[i] === 3){
+//     Diesel++;
+//   }
+// }
+// console.log(`MUITO OBRIGADO
+// Alcool: ${Alcool}
+// Gasolina: ${Gasolina}
+// Diesel: ${Diesel}`);
+
+// 1142
+
+var input = `2`;
+var lines = input.split("\n");
+
+const convertIntoInt = lines.shift();
+
+let result = [];
+let number = 1;
+let initialLength = 0;
+for (let i = 1; i <= convertIntoInt; i++) {
+  if (result.length <= convertIntoInt) {
+    for (let i = number; i === number; i++) {
+      const numberToAdd = `${i} ${i + 1} ${i + 2} PUM`;
+
+      result.push(numberToAdd);
+    }
+
+    number = number + 4;
+    if (result.length + 1 > initialLength) {
+      initialLength++;
+    }
   }
 }
-console.log(`MUITO OBRIGADO
-Alcool: ${Alcool}
-Gasolina: ${Gasolina}
-Diesel: ${Diesel}`);
+result.map((value) => console.log(value));
+
