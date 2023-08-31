@@ -1298,3 +1298,168 @@
 // const [x, y] = validNumber;
 // console.log(`media = ${((x+y)/2).toFixed(2)}`);
 
+// 1118
+// let input = `-3.5
+// 3.5
+// 11.0
+// 10.0
+// 4
+// 1
+// 8.0
+// 9.0
+// 2`
+// let lines = input.split('\n');
+// let convertIntoNumber= lines.map(line =>parseFloat(line))
+// // console.log(convertIntoNumber)
+// function calculateAverage(score1, score2) {
+//   return ((score1 + score2) / 2).toFixed(2);
+// }
+
+// function isValidScore(score) {
+//   return score >= 0 && score <= 10;
+// }
+
+// convertIntoNumber.forEach((value)=>{
+//   if(!isValidScore(value)){
+
+//     console.log(isValidScore(value))
+//   }
+// })
+
+// const validNumber = [];
+// const avgNum = [];
+// const avgFunction = (x, y) => ((x + y)/2).toFixed(2);
+
+// const line = lines.forEach(x => {
+//   if(x >= 0.0 && x <= 10.0){
+//     validNumber.push(Number(x));
+//     // avgFunction(validNumber[0],validNumber[1])
+//   }else{
+//     console.log(`nota invalida`);
+//   }
+// });
+// const [x, y] = validNumber;
+
+// console.log(validNumber, 'validNumber')
+// validNumber.forEach(Element => {
+//   if(Element >= 0.0 && Element <= 10.0){
+//     avgNum.push(Number(Element));
+//   }
+// })
+// console.log(avgNum)
+// if(avgNum.length === 1){
+//   console.log(`media = ${((avgNum[0]+avgNum[1])/2).toFixed(2)}`);
+// }
+// for (let i = 2; i < validNumber.length; i++) {
+//   const element = validNumber[i];
+//   console.log(element)
+//     if(element < 1 || element > 2 ){
+//       console.log(`novo calculo (1-sim 2-nao)`);
+//     }else if(element === 1 ){
+
+//     }
+// }
+
+// let input = `-3.5
+// 3.5
+// 11.0
+// 10.0
+// 4
+// 1
+// 8.0
+// 9.0
+// 2`;
+
+// let lines = input.split('\n');
+// let currentIndex = 0;
+
+// function readLine() {
+//   return lines[currentIndex++];
+// }
+
+// function isValidScore(score) {
+//   return score >= 0 && score <= 10;
+// }
+
+// function calculateAverage(score1, score2) {
+//   return ((score1 + score2) / 2).toFixed(2);
+// }
+
+// function main() {
+//   while (true) {
+//     let score1 = parseFloat(readLine());
+//     let score2 = parseFloat(readLine());
+
+//     if (!isValidScore(score1)) {
+//       console.log("nota invalida");
+//     } else if (!isValidScore(score2)) {
+//       console.log("nota invalida");
+//     } else {
+//       let average = calculateAverage(score1, score2);
+//       console.log(`media = ${average}`);
+//     }
+
+//     console.log("novo calculo (1-sim 2-nao)");
+
+//     let X = parseInt(readLine());
+
+//     while (X !== 1 && X !== 2) {
+//       X = parseInt(readLine());
+//     }
+
+//     if (X === 2) {
+//       break;
+//     }
+//   }
+// }
+
+// main();
+
+// Start with 1133
+
+// let input = `2
+// 2`;
+
+// let lines = input.split('\n');
+// const convertIntoInt = lines.map(num => parseInt(num));
+// const maxValue = Math.max(...convertIntoInt);
+// const minValue = Math.min(...convertIntoInt);
+
+// for (let i = minValue+1; i < maxValue; i++) {
+
+//   if(i%5 === 2 || i%5 === 3){
+//     console.log(i);
+    
+//   };
+  
+// };
+
+
+// 1134
+
+var input = `8
+1
+7
+2
+2
+4`
+var lines = input.split('\n');
+const convertIntoInt = lines.map(num => parseInt(num));
+
+let Alcool= 0;
+let Gasolina= 0;
+let Diesel= 0;
+for(let i = 0; i < convertIntoInt.length; i++){
+  
+  if(convertIntoInt[i] === 1){
+    Alcool++;
+  }else if(convertIntoInt[i] === 2){
+    Gasolina++;
+  }else if(convertIntoInt[i] === 3){
+    Diesel++;
+  }
+}
+console.log(`MUITO OBRIGADO
+Alcool: ${Alcool}
+Gasolina: ${Gasolina}
+Diesel: ${Diesel}`);
